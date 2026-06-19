@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bridal Collection | Narhari Jewellery</title>
+  <meta name="description" content="Explore our royal Bridal Collection. Majestic Kundan, temple jewelry, and heavy gold-plated replica sets for your wedding day.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        NARHARI
+        <span class="sublogo">Jewellery</span>
+      </a>
+
+      <!-- Main Navigation Menu -->
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="collections.html">Collections</a>
+        <a href="one-gram-gold.html">1 Gram Gold</a>
+        <a href="gold-plated.html">Gold Plated</a>
+        <a href="silver.html">Silver</a>
+        <a href="bridal.html" class="active">Bridal</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header-actions">
+        <button class="header-icon-btn search-trigger" aria-label="Search Catalog">
+          <svg style="width: 20px; height: 20px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </button>
+
+        <button class="header-icon-btn wishlist-trigger" aria-label="Wishlist">
+          <svg style="width: 20px; height: 20px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+          <span class="badge wishlist-badge" style="display: none;">0</span>
+        </button>
+
+        <button class="header-icon-btn cart-trigger" aria-label="Cart">
+          <svg style="width: 20px; height: 20px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          <span class="badge cart-badge" style="display: none;">0</span>
+        </button>
+
+        <div class="menu-toggle" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero" style="background-image: url('assets/images/bridal_showcase.png');">
+    <div class="page-hero-content">
+      <h1>The Royal Bridal Collection</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <a href="collections.html">Collections</a>
+        <span class="separator">/</span>
+        <span class="current">Bridal Collection</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Catalog -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <p>Royal Regalia for Auspicious Days</p>
+        <h2>Bridal Jewellery Collection</h2>
+      </div>
+
+      <!-- Dynamically rendered by main.js -->
+      <div class="products-grid js-category-products" data-category="bridal">
+        <!-- Loader markup -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 25px;">
+            NARHARI
+            <span class="sublogo">Jewellery</span>
+          </a>
+          <p>Crafting premium 1 Gram Gold, Gold Plated, and Sterling Silver jewellery since 2012.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="collections.html">All Collections</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Collections</h3>
+          <ul class="footer-links">
+            <li><a href="one-gram-gold.html">1 Gram Gold Jewellery</a></li>
+            <li><a href="gold-plated.html">Gold Plated Ornaments</a></li>
+            <li><a href="silver.html">Sterling Silver Ornaments</a></li>
+            <li><a href="bridal.html">Royal Bridal Sets</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <form class="newsletter-form">
+            <div class="newsletter-input-wrapper">
+              <input type="email" placeholder="Your Email Address" required>
+            </div>
+            <button type="submit" class="btn-gold">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Narhari Jewellery. All Rights Reserved.</p>
+        <p>Elegance That Lasts Forever.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Drawer Overlay & Drawers -->
+  <div class="drawer-overlay"></div>
+  
+  <div class="drawer" id="cart-drawer">
+    <div class="drawer-header">
+      <h3>Shopping Cart</h3>
+      <span class="drawer-close-btn">&times;</span>
+    </div>
+    <div class="drawer-content" id="cart-items-list">
+      <p class="empty-drawer-msg">Your shopping cart is empty.</p>
+    </div>
+    <div class="drawer-footer">
+      <div class="drawer-summary-row">
+        <span class="label">Subtotal:</span>
+        <span class="val" id="cart-total-value">₹0</span>
+      </div>
+      <div class="drawer-actions-btns">
+        <button class="btn-gold" onclick="checkout()">Proceed to Checkout (WhatsApp)</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="drawer" id="wishlist-drawer">
+    <div class="drawer-header">
+      <h3>My Wishlist</h3>
+      <span class="drawer-close-btn">&times;</span>
+    </div>
+    <div class="drawer-content" id="wishlist-items-list">
+      <p class="empty-drawer-msg">Your wishlist is empty.</p>
+    </div>
+  </div>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-container">
+      <span class="search-close-btn" id="search-close">&times;</span>
+      <div class="search-input-wrapper">
+        <input type="text" id="search-input" placeholder="Search premium necklaces, rings, earrings..." autocomplete="off">
+        <svg style="width: 28px; height: 28px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
+      <div class="search-results" id="search-results">
+        <div class="search-results-list" id="search-results-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data and JS -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

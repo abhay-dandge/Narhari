@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Narhari Jewellery | Elegance That Lasts Forever</title>
+  <meta name="description" content="Discover Timeless Beauty with Narhari Jewellery. Premium 1 Gram Gold, Gold Plated, Silver, Traditional Maharashtrian & Bridal Jewellery Collections.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- --- Sticky Navigation Header --- -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        NARHARI
+        <span class="sublogo">Jewellery</span>
+      </a>
+
+      <!-- Main Navigation Menu -->
+      <nav class="nav-menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="collections.html">Collections</a>
+        <a href="one-gram-gold.html">1 Gram Gold</a>
+        <a href="gold-plated.html">Gold Plated</a>
+        <a href="silver.html">Silver</a>
+        <a href="bridal.html">Bridal</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <!-- Header actions (Search, Wishlist, Cart) -->
+      <div class="header-actions">
+        <!-- Search Trigger -->
+        <button class="header-icon-btn search-trigger" aria-label="Search Catalog" id="nav-search-btn">
+          <svg style="width: 20px; height: 20px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </button>
+
+        <!-- Wishlist Drawer Trigger -->
+        <button class="header-icon-btn wishlist-trigger" aria-label="Wishlist" id="nav-wishlist-btn">
+          <svg style="width: 20px; height: 20px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+          <span class="badge wishlist-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Cart Drawer Trigger -->
+        <button class="header-icon-btn cart-trigger" aria-label="Cart" id="nav-cart-btn">
+          <svg style="width: 20px; height: 20px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          <span class="badge cart-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="menu-toggle" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- --- 1. Hero Banner Section --- -->
+  <section class="hero-section">
+    <!-- Sliding luxury background banner -->
+    <div class="hero-slider">
+      <div class="hero-slide" style="background-image: url('assets/images/hero_banner.png');"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-content-inner">
+        <span class="hero-tagline">Elegance That Lasts Forever</span>
+        <h1 class="hero-title">
+          Discover Timeless Beauty
+          <span>with Narhari Jewellery</span>
+        </h1>
+        <p class="hero-desc">
+          Step into a world of ultimate craftsmanship. Browse our exquisite premium collections of 1 Gram Gold, high-end Gold Plated, and sparkling Sterling Silver jewellery meticulously styled for the modern Indian woman.
+        </p>
+        <div class="hero-actions-btns">
+          <a href="collections.html" class="btn-gold">Shop Collection</a>
+          <a href="contact.html" class="btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- 2. Featured Categories Section --- -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <p>Curated Selections</p>
+        <h2>Featured Categories</h2>
+      </div>
+
+      <div class="categories-grid">
+        <!-- 1 Gram Gold Category -->
+        <a href="one-gram-gold.html" class="category-card">
+          <img src="assets/images/cat_1gram.png" alt="1 Gram Gold Jewellery">
+          <div class="category-card-content">
+            <h3>1 Gram Gold</h3>
+            <p>Explore Collection →</p>
+          </div>
+        </a>
+
+        <!-- Gold Plated Category -->
+        <a href="gold-plated.html" class="category-card">
+          <img src="assets/images/cat_goldplated.png" alt="Gold Plated Jewellery">
+          <div class="category-card-content">
+            <h3>Gold Plated</h3>
+            <p>Explore Collection →</p>
+          </div>
+        </a>
+
+        <!-- Silver Category -->
+        <a href="silver.html" class="category-card">
+          <img src="assets/images/cat_silver.png" alt="Silver Jewellery">
+          <div class="category-card-content">
+            <h3>Silver Jewellery</h3>
+            <p>Explore Collection →</p>
+          </div>
+        </a>
+
+        <!-- Bridal Collection Category -->
+        <a href="bridal.html" class="category-card">
+          <img src="assets/images/bridal_showcase.png" alt="Bridal Collection">
+          <div class="category-card-content">
+            <h3>Bridal Jewellery</h3>
+            <p>Explore Collection →</p>
+          </div>
+        </a>
+
+        <!-- Traditional Collection Category -->
+        <a href="collections.html?category=traditional" class="category-card">
+          <img src="assets/images/cat_traditional.png" alt="Traditional Jewellery">
+          <div class="category-card-content">
+            <h3>Traditional Maharashtrian</h3>
+            <p>Explore Collection →</p>
+          </div>
+        </a>
+
+        <!-- Daily Wear Category -->
+        <a href="collections.html?category=daily-wear" class="category-card">
+          <img src="assets/images/cat_dailywear.png" alt="Daily Wear Jewellery">
+          <div class="category-card-content">
+            <h3>Daily Wear</h3>
+            <p>Explore Collection →</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- 3. Best Selling Products Section --- -->
+  <section class="section-padding" style="background-color: var(--dark-accent); border-top: var(--border-dark); border-bottom: var(--border-dark);">
+    <div class="container">
+      <div class="section-header">
+        <p>Highly Coveted Pieces</p>
+        <h2>Best Selling Products</h2>
+      </div>
+
+      <!-- Grid dynamically loaded by main.js -->
+      <div class="products-grid js-best-sellers">
+        <!-- Products will load here dynamically via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- --- 4. Why Choose Narhari Jewellery Section --- -->
+  <section class="section-padding why-choose-us">
+    <div class="container">
+      <div class="section-header">
+        <p>Our Promise of Excellence</p>
+        <h2>Why Choose Us</h2>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1: Premium Finish -->
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3>Premium Quality Finish</h3>
+          <p>Each ornament features an immaculate, authentic gold look crafted by expert artisans with extreme care.</p>
+        </div>
+
+        <!-- Feature 2: Affordable Luxury -->
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3>Affordable Luxury</h3>
+          <p>Experience the royal look and weight of pure gold jewellery at a fraction of the gold market price.</p>
+        </div>
+
+        <!-- Feature 3: Latest Designs -->
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <h3>Latest Designs</h3>
+          <p>Our designs update dynamically inline with contemporary Indian bridal trends and festive requirements.</p>
+        </div>
+
+        <!-- Feature 4: Trusted by Customers -->
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3>Trusted by Customers</h3>
+          <p>Over a decade of legacy serving satisfied families with jewelry that enhances their special occasions.</p>
+        </div>
+
+        <!-- Feature 5: Long Lasting Shine -->
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3>Long Lasting Shine</h3>
+          <p>Crafted with anti-tarnish protective sealing layers that ensure long-lasting luster and durable shine.</p>
+        </div>
+
+        <!-- Feature 6: Secure Shopping -->
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </div>
+          <h3>Secure Shopping</h3>
+          <p>Direct integration with secure customer service and hassle-free WhatsApp order confirmation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- 5. Bridal Collection Showcase Section --- -->
+  <section class="bridal-showcase-section" style="background-image: url('assets/images/hero_banner.png');">
+    <div class="container">
+      <div class="bridal-container">
+        <!-- Showcase Image box -->
+        <div class="bridal-img-wrapper">
+          <img src="assets/images/bridal_showcase.png" alt="Bridal Gold Choker Showcase">
+        </div>
+
+        <!-- Description details -->
+        <div class="bridal-details">
+          <span class="bridal-tag">The Heritage Bride</span>
+          <h2>The Royal Bridal Collection</h2>
+          <p>
+            An ode to classic Indian heritage. Our premium bridal ensembles combine the elegance of traditional temple design with premium Kundan and heavy gold replica finishes. Perfect match for your auspicious wedding rituals.
+          </p>
+          <ul class="bridal-points">
+            <li>
+              <svg style="width: 20px; height: 20px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Intricate Handcrafted Necklaces & Chokers</span>
+            </li>
+            <li>
+              <svg style="width: 20px; height: 20px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Authentic Kemp, Pearl & Kundan Stones setting</span>
+            </li>
+            <li>
+              <svg style="width: 20px; height: 20px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Customized bridal combos available</span>
+            </li>
+          </ul>
+          <a href="bridal.html" class="btn-gold">View Bridal Catalog</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- 6. Customer Reviews Section --- -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <p>Words of Admiration</p>
+        <h2>Customer Testimonials</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            "I ordered the 1 Gram Gold Kolhapuri Saaj for a family wedding, and everyone assumed it was 22k pure gold! The detailing is phenomenal, and the gold tone is absolutely perfect, not artificial at all."
+          </p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">PS</div>
+            <div class="reviewer-meta">
+              <h4>Priyanka Shinde</h4>
+              <p>Pune, Maharashtra</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            "Stunning quality! The Sterling Silver ring looks exactly like fine diamonds. It has been a month of daily wear, and the shine is still as brilliant as day one. Highly recommend Narhari Jewellery!"
+          </p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">AD</div>
+            <div class="reviewer-meta">
+              <h4>Ananya Deshmukh</h4>
+              <p>Mumbai</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            "The Kundan bridal set was the highlight of my wedding reception. It looked incredibly rich, felt heavy and royal, yet didn't burn a hole in our budget. Thank you for such stunning options."
+          </p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">NK</div>
+            <div class="reviewer-meta">
+              <h4>Neeta Kulkarni</h4>
+              <p>Nashik</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- 7. Instagram Gallery Section --- -->
+  <section class="section-padding" style="background-color: var(--dark-accent); border-top: var(--border-dark); border-bottom: var(--border-dark); padding-bottom: 80px;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 40px;">
+        <p>Follow Our Journey</p>
+        <h2>@NarhariJewellery on Instagram</h2>
+      </div>
+
+      <div class="insta-grid">
+        <div class="insta-item">
+          <img src="assets/images/hero_banner.png" alt="Instagram jewellery showcase">
+          <div class="insta-overlay">♥</div>
+        </div>
+        <div class="insta-item">
+          <img src="assets/images/bridal_showcase.png" alt="Instagram bridal choker close up">
+          <div class="insta-overlay">♥</div>
+        </div>
+        <div class="insta-item">
+          <img src="assets/images/cat_1gram.png" alt="Instagram gold ornament layout">
+          <div class="insta-overlay">♥</div>
+        </div>
+        <div class="insta-item">
+          <img src="assets/images/cat_silver.png" alt="Instagram sparkling silver jewelry close up">
+          <div class="insta-overlay">♥</div>
+        </div>
+        <div class="insta-item">
+          <img src="assets/images/cat_traditional.png" alt="Instagram traditional jewellery layout">
+          <div class="insta-overlay">♥</div>
+        </div>
+        <div class="insta-item">
+          <img src="assets/images/cat_dailywear.png" alt="Instagram daily wear ornaments layout">
+          <div class="insta-overlay">♥</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- 8. Contact & Location Section --- -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <p>Visit Our Flagship Store</p>
+        <h2>Contact & Location</h2>
+      </div>
+
+      <div class="contact-section-inner">
+        <!-- Details Column -->
+        <div class="contact-details-side">
+          <h3>Narhari Jewellery</h3>
+          <ul class="contact-info-list">
+            <li>
+              <svg style="width: 24px; height: 24px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <div>
+                <h4>Address</h4>
+                <p>102, Gold Palace Mansion, Laxmi Road, Narayan Peth, Pune, Maharashtra - 411030</p>
+              </div>
+            </li>
+            <li>
+              <svg style="width: 24px; height: 24px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <div>
+                <h4>Phone Number</h4>
+                <p>+91 99999 99999</p>
+              </div>
+            </li>
+            <li>
+              <svg style="width: 24px; height: 24px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div>
+                <h4>Store Hours</h4>
+                <p>Tuesday - Sunday: 11:00 AM to 08:30 PM (Mondays Closed)</p>
+              </div>
+            </li>
+          </ul>
+          
+          <button class="btn-gold" onclick="sendWhatsAppMessage('Hello! I would like to schedule a virtual tour or query about jewellery availability.')" style="gap: 10px;">
+            <svg style="width: 18px; height: 18px; fill: currentColor;" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.717-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.618-1.016-5.08-2.868-6.932C16.357 2.022 13.9 1.002 12.01 1.002c-5.41 0-9.811 4.397-9.814 9.803-.001 1.93.501 3.568 1.461 5.093L2.653 20.4l4.032-1.057z" />
+            </svg>
+            Chat On WhatsApp
+          </button>
+        </div>
+
+        <!-- Google Maps Side -->
+        <div class="contact-map-side">
+          <!-- Styled maps frame mapping Pune Laxmi road -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.3811653896507!2d73.84783307590807!3d18.511676669446467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c06ff3fd5555%3A0xc39f88c5ccff19df!2sLaxmi%20Rd%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1718800000000!5m2!1sen!2sin" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand details -->
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 25px;">
+            NARHARI
+            <span class="sublogo">Jewellery</span>
+          </a>
+          <p>
+            Crafting premium 1 Gram Gold, high-end Gold Plated, and sparkling Sterling Silver jewellery since 2012. Our pieces speak the language of absolute elegance and eternal beauty.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="footer-social-btn">FB</a>
+            <a href="#" class="footer-social-btn">IG</a>
+            <a href="#" class="footer-social-btn">YT</a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="collections.html">All Collections</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Collections -->
+        <div class="footer-col">
+          <h3>Collections</h3>
+          <ul class="footer-links">
+            <li><a href="one-gram-gold.html">1 Gram Gold Jewellery</a></li>
+            <li><a href="gold-plated.html">Gold Plated Ornaments</a></li>
+            <li><a href="silver.html">Sterling Silver Ornaments</a></li>
+            <li><a href="bridal.html">Royal Bridal Sets</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <p>Subscribe to our exclusive newsletters to receive early previews of new design launches.</p>
+          <form class="newsletter-form">
+            <div class="newsletter-input-wrapper">
+              <input type="email" placeholder="Your Email Address" required>
+            </div>
+            <button type="submit" class="btn-gold">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Narhari Jewellery. All Rights Reserved.</p>
+        <p>Elegance That Lasts Forever.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- --- Floating WhatsApp Chatbox widget --- -->
+  <div class="whatsapp-widget">
+    <!-- Float button -->
+    <div class="whatsapp-btn-float" id="wa-btn-float">
+      <svg viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.717-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.618-1.016-5.08-2.868-6.932C16.357 2.022 13.9 1.002 12.01 1.002c-5.41 0-9.811 4.397-9.814 9.803-.001 1.93.501 3.568 1.461 5.093L2.653 20.4l4.032-1.057z" />
+      </svg>
+    </div>
+
+    <!-- Dynamic WhatsApp chatbox -->
+    <div class="whatsapp-chatbox" id="wa-chatbox">
+      <div class="whatsapp-chat-header">
+        <div class="whatsapp-chat-header-avatar">NJ</div>
+        <div class="whatsapp-chat-header-info">
+          <h4>Narhari Support</h4>
+          <p>Online • Custom Jewelry Expert</p>
+        </div>
+      </div>
+      <div class="whatsapp-chat-body">
+        <div class="whatsapp-msg">
+          Namaste! 🙏 How can we help you look elegant today? Let us know what you're shopping for.
+          <span class="msg-time">18:40</span>
+        </div>
+      </div>
+      <div class="whatsapp-chat-templates">
+        <button class="whatsapp-template-btn" onclick="sendWhatsAppMessage('Hi, I am interested in viewing the 1 Gram Gold Traditional Jewellery collection.')">
+          Interested in 1 Gram Gold Collection
+        </button>
+        <button class="whatsapp-template-btn" onclick="sendWhatsAppMessage('Hello! I would like to schedule a video call consultation to choose Bridal Jewellery.')">
+          Book Bridal Video Consultation
+        </button>
+        <button class="whatsapp-template-btn" onclick="sendWhatsAppMessage('Do you customize silver rings to specific sizes?')">
+          Ask about custom Silver Rings
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- --- Drawers Layout (Overlay & Slide Panels) --- -->
+  <div class="drawer-overlay"></div>
+
+  <!-- 1. Cart Drawer -->
+  <div class="drawer" id="cart-drawer">
+    <div class="drawer-header">
+      <h3>Shopping Cart</h3>
+      <span class="drawer-close-btn">&times;</span>
+    </div>
+    <!-- Cart Items will load here dynamically -->
+    <div class="drawer-content" id="cart-items-list">
+      <p class="empty-drawer-msg">Your shopping cart is empty.</p>
+    </div>
+    <!-- Cart Footer with Total -->
+    <div class="drawer-footer">
+      <div class="drawer-summary-row">
+        <span class="label">Subtotal:</span>
+        <span class="val" id="cart-total-value">₹0</span>
+      </div>
+      <div class="drawer-actions-btns">
+        <button class="btn-gold" onclick="checkout()">Proceed to Checkout (WhatsApp)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Wishlist Drawer -->
+  <div class="drawer" id="wishlist-drawer">
+    <div class="drawer-header">
+      <h3>My Wishlist</h3>
+      <span class="drawer-close-btn">&times;</span>
+    </div>
+    <!-- Wishlist Items will load here dynamically -->
+    <div class="drawer-content" id="wishlist-items-list">
+      <p class="empty-drawer-msg">Your wishlist is empty.</p>
+    </div>
+  </div>
+
+  <!-- --- Search Overlay --- -->
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-container">
+      <span class="search-close-btn" id="search-close">&times;</span>
+      <div class="search-input-wrapper">
+        <input type="text" id="search-input" placeholder="Search premium necklaces, rings, earrings..." autocomplete="off">
+        <svg style="width: 28px; height: 28px;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
+      <div class="search-results" id="search-results">
+        <div class="search-results-list" id="search-results-list">
+          <!-- Search results dynamically load here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data and JS -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
