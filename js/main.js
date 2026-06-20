@@ -35,32 +35,19 @@ function initCommonUI() {
   const menuToggle = document.querySelector('.menu-toggle');
   const navMenu = document.querySelector('nav.nav-menu');
   if (menuToggle && navMenu) {
-    menuToggle.addEventListener('click', () => {
+    menuToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
       navMenu.classList.toggle('active');
       menuToggle.classList.toggle('active');
-      // Style toggle spans
-      const spans = menuToggle.querySelectorAll('span');
-      if (navMenu.classList.contains('active')) {
-        navMenu.style.display = 'flex';
-        navMenu.style.flexDirection = 'column';
-        navMenu.style.position = 'fixed';
-        navMenu.style.top = '0';
-        navMenu.style.right = '0';
-        navMenu.style.width = '280px';
-        navMenu.style.height = '100vh';
-        navMenu.style.backgroundColor = 'var(--dark-accent)';
-        navMenu.style.padding = '100px 30px';
-        navMenu.style.boxShadow = 'var(--shadow-dark)';
-        navMenu.style.zIndex = '999';
-        navMenu.style.gap = '25px';
-        spans[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
-        spans[1].style.opacity = '0';
-        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-      } else {
-        navMenu.removeAttribute('style');
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity = '1';
-        spans[2].style.transform = 'none';
+      document.body.classList.toggle('mobile-nav-active');
+    });
+
+    // Close mobile nav when clicking outside of it
+    document.addEventListener('click', (e) => {
+      if (navMenu.classList.contains('active') && !navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        navMenu.classList.remove('active');
+        menuToggle.classList.remove('active');
+        document.body.classList.remove('mobile-nav-active');
       }
     });
   }
@@ -632,6 +619,31 @@ function setupCatalogFiltering(container) {
       filters.categories.push(urlCategory);
     }
   }
+
+  // Mobile/Tablet sidebar filter drawer triggers
+  const mobileFilterBtn = document.getElementById('mobile-filter-trigger');
+  const filtersCloseBtn = document.getElementById('filters-close');
+  const sidebar = document.querySelector('aside.filters-sidebar');
+
+  if (mobileFilterBtn && sidebar) {
+    mobileFilterBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      sidebar.classList.add('active');
+    });
+  }
+
+  if (filtersCloseBtn && sidebar) {
+    filtersCloseBtn.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+    });
+  }
+
+  // Close filters when clicking outside the filters sidebar
+  document.addEventListener('click', (e) => {
+    if (sidebar && sidebar.classList.contains('active') && !sidebar.contains(e.target) && (mobileFilterBtn && !mobileFilterBtn.contains(e.target))) {
+      sidebar.classList.remove('active');
+    }
+  });
 
   // Trigger initial render
   filterAndRender();
